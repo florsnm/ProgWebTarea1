@@ -1,0 +1,47 @@
+ <!-- El archivo index.html es la base de la pag web. Aqui se define la
+  estructura del contenido que se va a mostrar en el navegador-->
+
+<!DOCTYPE html>
+<html lang="es">
+     <!-- <head> contiene meta-informacion sobre el documento. Aqui
+        se define el titulo de la pagina, el conjunto de caracteres,
+        y enlazo el archivo CSS que da estilo a la pagina.  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+ <!-- En <body> defino el contenido visible de la pagina. -->
+<body>
+    <div class="container">
+        <h2>Formulario de Registro</h2>
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+            <button type="button" id="guardarBtn">Guardar</button>
+        </form>
+
+        <h3>Lista de Usuarios Registrados</h3>
+        <table id="usuariosTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán las filas dinámicamente usando javscript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>  <!-- Este script enlaza el archivo
+    script.js, donde se escribe el código JavaScript que maneja la lógica de la página. -->
+</body>
+</html>
