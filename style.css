@@ -1,0 +1,62 @@
+/*El archivo styles.css define cómo se verá tu página. 
+Le da estilos a los elementos HTML.*/
+
+/*'body' define la fuente para toda la pagina y agrega un margen alrededor
+del contenido*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/*'container' define un contenedor centrado con un ancho maximo de 500px*/
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*'label' es Estilo para las etiquetas del formulario. 
+Se asegura de que tengan un ancho fijo y estén alineadas con las entradas.*/
+label {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/*Estilo para las cajas de texto del formulario. 
+Ajusta el ancho y el relleno.*/
+input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Define el estilo del botón, incluyendo el color de fondo y el texto, 
+y cómo cambia cuando el usuario pasa el mouse por encima*/
+button {
+    padding: 5px 10px;
+    background-color: hsl(194, 48%, 43%);
+    color: rgba(255, 255, 255, 0.664);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #50a2ad;
+}
+
+/*Define el estilo para la tabla, 
+incluyendo los bordes y el relleno de las celdas.*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
